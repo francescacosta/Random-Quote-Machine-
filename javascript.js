@@ -62,21 +62,31 @@ var quotes = [
 ]
 
 var colours = [
-  "#69D2E7", "#A7DBD8", "#E0E4CC", "#F38630", "#FA6900"
+  "#69D2E7", "#A7DBD8", "#E0E4CC", "#F38630", "#FA6900", "#FA6310"
 ]
 
 function newQuote() {
 
   var randomNumber = Math.floor(Math.random() * (quotes.length));
-  console.log(quotes[randomNumber])
-  document.getElementById('theQuote').innerHTML = quotes[randomNumber].quote;
+  var elem = quotes[randomNumber]
+  updateQuote(elem.quote)
+  updateAuthor(elem.name)
 
   var randomColour = colours[Math.floor(Math.random() * (colours.length))];
 
-  console.log('randomColour:', randomColour)
   changeBackgroundColour(randomColour);
   changeTextColour(randomColour);
   changeButtonColour(randomColour);
+  changeTwitterButtonColour(randomColour);
+  changeaAuthorColour(randomColour);
+}
+
+function updateQuote(q) {
+  document.getElementById('theQuote').innerHTML = q;
+}
+
+function updateAuthor(name) {
+  document.getElementById('theAuthor').innerHTML = name;
 }
 
 function changeBackgroundColour(colour) {
@@ -89,6 +99,14 @@ function changeTextColour(colour) {
 
 function changeButtonColour(colour) {
   document.getElementsByClassName('new-quote')[0].style.background = colour;
+}
+
+function changeTwitterButtonColour(colour) {
+  document.getElementsByClassName('twitter')[0].children[0].style.color = colour;
+}
+
+function changeaAuthorColour(colour) {
+  document.getElementById('theAuthor').style.color = colour;
 }
 
 newQuote();

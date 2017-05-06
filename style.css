@@ -38,6 +38,15 @@ a:visited {
 
 }
 
+#theAuthor {
+  position: absolute;
+  bottom: 120px;
+  right: 50px;
+  color: #69D2E7;
+  font-family: 'Courgette';
+  font-size: 20px;
+}
+
 .the-author {
   font-family: 'Indie Flower', cursive;
   font-size: 35px;
