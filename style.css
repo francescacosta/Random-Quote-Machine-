@@ -1,0 +1,76 @@
+body {
+  background: #69D2E7
+}
+
+h1 {
+  color: white;
+  font-family: 'Oswald';
+  text-align: center;
+  margin-top: 100px;
+  font-size: 55px;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.quote-container {
+  background: white;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  width:40em;
+  height:18em;
+  margin-top: -9em; /*set to a negative number 1/2 of your height*/
+  margin-left: -20em; /*set to a negative number 1/2 of your width*/
+  border-radius: 25px;
+}
+
+#theQuote {
+  padding-top: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #69D2E7;
+  font-size: 22px;
+
+}
+
+.the-author {
+  font-family: 'Indie Flower', cursive;
+  font-size: 35px;
+  color: #69D2E7;
+  margin-right: 35px;
+  margin-left: 400px;
+  margin-top: -110px;
+}
+
+.new-quote {
+  font-family: 'Oswald';
+  font-size: 19px;
+
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+
+  align-items: center;
+  background-color: #69D2E7;
+  color: white;
+  border-radius: 25px;
+  mmargin-top: 250px;
+  mmargin-left: 35px;
+  width: 140px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.twitter i {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #69D2E7;
+  font-size: 2.5em;
+}
